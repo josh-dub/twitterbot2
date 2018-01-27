@@ -27,5 +27,5 @@ for s in twt:
     for i in t:
         if i == s.text:
             sn = s.user.screen_name
-            m = "@%s actually, it's Auburn University" % (sn)
+            m = "@%s actually, it's Auburn University, not University of Auburn" % (sn)
             s = api.update_status(m, s.id)
